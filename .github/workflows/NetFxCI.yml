@@ -35,7 +35,7 @@ jobs:
         run:  nuget restore TestNetStandardWebGitHubActions.sln
         
       - name: Build the Solution
-        run:  msbuild TestNetStandardWebGitHubActions.sln
+        run:  msbuild TestNetStandardWebGitHubActions.sln /p:Configuration=Release
       
         
         
